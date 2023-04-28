@@ -1,0 +1,230 @@
+#about-me {
+  height: 91.5vh;
+  display: flex;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  background-color: #05010b;
+}
+
+.about-me-container {
+  height: 55vh;
+  background-color: #0e0a13;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-me-title {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
+  font-weight: 550;
+}
+
+.about-me-text {
+  width: 50%;
+  text-align: justify;
+  color: white;
+  padding-left: 95px;
+  padding-right: 48px;
+  margin-top: 25px;
+  font-size: 1.15rem;
+}
+
+.about-me-text p {
+  margin-bottom: 4px;
+}
+
+.about-me-text p span {
+  color: #5129e2;
+}
+
+.about-me-skills {
+  width: 50%;
+}
+
+.about-me-logos {
+  margin-left: 80px;
+  margin-right: 70px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0px;
+}
+
+.about-me-logos li {
+  display: inline-block;
+  text-align: center;
+  color: white;
+  margin-left: 40px;
+  margin-left: 40px;
+}
+
+.about-me-logos img {
+  max-width: 100%;
+  height: auto;
+}
+
+.about-me-logos p {
+  margin-top: 10px;
+  font-weight: 600;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.1s, opacity 0.1s linear;
+  animation: slide-up 0.2s ease 0.2s;
+}
+
+.about-me-logos li:hover p {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.2s linear;
+}
+
+.upper {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.net-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.net-logo-white {
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+li:hover .net-logo-white {
+  opacity: 0;
+}
+
+.net-logo {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+li:hover .net-logo {
+  opacity: 1;
+}
+
+.git-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.git-logo-white {
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+li:hover .git-logo-white {
+  opacity: 0;
+}
+
+.git-logo {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+li:hover .git-logo {
+  opacity: 1;
+}
+
+.css-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.css-logo-white {
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+li:hover .css-logo-white {
+  opacity: 0;
+}
+
+.css-logo {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+li:hover .css-logo {
+  opacity: 1;
+}
+
+.html-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.html-logo-white {
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+li:hover .html-logo-white {
+  opacity: 0;
+}
+
+.html-logo {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+li:hover .html-logo {
+  opacity: 1;
+}
+
+.java-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.java-logo-white {
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+li:hover .java-logo-white {
+  opacity: 0;
+}
+
+.java-logo {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+li:hover .java-logo {
+  opacity: 1;
+}
+
+.sql-li {
+  position: relative;
+  overflow: hidden;
+}
+
+.sql-logo-white {
+  position: absolute;
+  transition: opacity 0.1s ease-in;
+}
+
+li:hover .sql-logo-white {
+  opacity: 0;
+}
+
+.sql-logo {
+  opacity: 0;
+  transition: opacity 0.2s ease-out;
+}
+
+li:hover .sql-logo {
+  opacity: 1;
+}

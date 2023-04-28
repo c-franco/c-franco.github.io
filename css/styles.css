@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #05010b;
+}
+
+.container {
+  width: 60%;
+  margin: 0 auto;
+  border-radius: 0.5rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}

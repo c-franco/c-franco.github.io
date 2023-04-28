@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,900;1,200;1,300;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/header.css" />
+    <link rel="stylesheet" type="text/css" href="css/about-me.css" />
+    <link rel="stylesheet" type="text/css" href="css/works.css" />
+    <link rel="stylesheet" type="text/css" href="css/contact.css" />
+    <link rel="stylesheet" type="text/css" href="css/stars.css" />
+    <title>Christian Franco</title>
+    <link rel="icon" type="image/png" href="/images/CFS_logo.svg" />
+  </head>
+  <body>
+    <header>
+      <nav id="nav">
+        <div class="nav-container">
+          <img id="logo" src="images/CFS_logo.svg" alt="Logo" />
+          <ul>
+            <li><a onclick="scrollFunction('about-me')">Sobre mí</a></li>
+            <li><a onclick="scrollFunction('works')">Trabajos</a></li>
+            <li><a onclick="scrollFunction('contact')">Contacto</a></li>
+            <li><a href="#">Idioma</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div id="home" class="main-container">
+        <div id="stars1"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+        <div id="title">
+          <p id="name">Christian Franco</p>
+          <p id="job">Desarrollador Back-End</p>
+        </div>
+        ºº
+      </div>
+    </header>
+
+    <section id="about-me">
+      <div class="about-me-container container">
+        <h2 class="about-me-title">Sobre mí</h2>
+        <div class="about-me-text">
+          <p>
+            Soy Christian Franco, un <span>desarrollador back-end</span> de 21
+            años.
+          </p>
+          <p>
+            Durante mi formación, tuve la oportunidad de aprender a desarrollar
+            en Java y crear páginas web con HTML y CSS. Actualmente cuento con
+            más de 1 año de experiencia trabajando con .NET.
+          </p>
+          <p>
+            Cuando no estoy trabajando, me gusta
+            <span>automatizar tareas</span> mediante la programación y
+            desarrollar mis propias aplicaciones móviles e incluso videojuegos.
+            Actualmente me encuentro <span>búsqueda de nuevos proyectos</span>.
+          </p>
+        </div>
+        <div class="about-me-skills">
+          <ul class="about-me-logos">
+            <li class="upper net-li">
+              <img
+                class="net-logo-white"
+                src="/images/skills/net.png"
+                alt="Logo .NET"
+              />
+              <img
+                class="net-logo"
+                src="/images/skills/net2.png"
+                alt="Logo .NET"
+              />
+              <p>C# .NET</p>
+            </li>
+            <li class="upper java-li">
+              <img
+                class="java-logo-white"
+                src="/images/skills/java.png"
+                alt="Logo Java"
+              />
+              <img
+                class="java-logo"
+                src="/images/skills/java2.png"
+                alt="Logo Java"
+              />
+              <p>Java</p>
+            </li>
+            <li class="upper sql-li">
+              <img
+                class="sql-logo-white"
+                src="/images/skills/sql.png"
+                alt="Logo SQL"
+              />
+              <img
+                class="sql-logo"
+                src="/images/skills/sql2.png"
+                alt="Logo SQL"
+              />
+              <p>SQL Server</p>
+            </li>
+            <li class="lower html-li">
+              <img
+                class="html-logo-white"
+                src="/images/skills/html5.png"
+                alt="Logo HTML5"
+              />
+              <img
+                class="html-logo"
+                src="/images/skills/html52.png"
+                alt="Logo HTML5"
+              />
+              <p>HTML 5</p>
+            </li>
+            <li class="lower css-li">
+              <img
+                class="css-logo-white"
+                src="/images/skills/css3.png"
+                alt="Logo CSS3"
+              />
+              <img
+                class="css-logo"
+                src="/images/skills/css32.png"
+                alt="Logo CSS3"
+              />
+              <p>CSS 3</p>
+            </li>
+            <li class="lower git-li">
+              <img
+                class="git-logo-white"
+                src="/images/skills/git.png"
+                alt="Logo Git"
+              />
+              <img
+                class="git-logo"
+                src="/images/skills/git2.png"
+                alt="Logo Git"
+              />
+              <p>Git</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="works">
+      <h1>Proyectos personales</h1>
+      <div class="works-container container">
+        <div class="work-1 work-container"></div>
+        <div class="work-2 work-container"></div>
+        <div class="work-3 work-container"></div>
+        <div class="work-4 work-container"></div>
+        <div class="work-5 work-container"></div>
+        <div class="work-6 work-container"></div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="container"></div>
+    </section>
+  </body>
+</html>
