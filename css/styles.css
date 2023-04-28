@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #05010b;
+  background-color: var(--bg-color);
 }
 
 .container {
@@ -16,4 +16,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+
+:root {
+  --bg-color: #05010b;
+  --layout-color: #1c1a1f;
 }

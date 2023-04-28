@@ -22,5 +22,5 @@
 
 .work-container {
   border-radius: 0.5rem;
-  background-color: #0e0a13;
+  background-color: var(--layout-color);
 }

@@ -5,7 +5,7 @@ header {
 }
 
 .nav-scrolled {
-  background-color: #0e0a13;
+  background-color: var(--layout-color);
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
 }
 
