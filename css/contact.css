@@ -101,6 +101,8 @@ form input,
   width: 20%;
   margin: 0 auto;
   font-weight: 550;
+  cursor: not-allowed;
+  opacity: 0.65;
 }
 
 .form-half {
@@ -123,16 +125,6 @@ form input,
     float: none;
     margin-bottom: 0;
   }
-}
-
-.contact-form form:before,
-.contact-form form:after {
-  content: " ";
-  display: table;
-}
-
-.contact-form form:after {
-  clear: both;
 }
 
 #footer-container {

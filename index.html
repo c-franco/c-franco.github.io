@@ -39,7 +39,7 @@
             <li><a onclick="scrollFunction('about-me')">Sobre mí</a></li>
             <li><a onclick="scrollFunction('works')">Trabajos</a></li>
             <li><a onclick="scrollFunction('contact')">Contacto</a></li>
-            <li><a href="#">Idioma</a></li>
+            <li><a href="">Idioma</a></li>
           </ul>
         </div>
       </nav>
@@ -181,18 +181,43 @@
           conmigo!
         </p>
         <div class="contact-form">
-          <form method="post" action="php/form.php">
+          <form action="send-email.php" method="POST" id="form">
             <div class="form-half form-left">
               <p>Nombre</p>
-              <input id="input-name" type="text" name="name"/>
+              <input
+                id="input-name"
+                type="text"
+                name="name"
+                oninput="IsFormValid()"
+                required
+              />
               <p class="form-email-label">Email</p>
-              <input id="input-email" type="email" name="email"/>
+              <input
+                id="input-email"
+                type="email"
+                name="email"
+                oninput="IsFormValid()"
+                required
+              />
             </div>
             <div class="form-half form-right">
               <p>Mensaje</p>
-              <textarea id="input-message" type="text" name="message"></textarea>
+              <textarea
+                id="input-message"
+                type="text"
+                name="message"
+                oninput="IsFormValid()"
+                required
+              ></textarea>
             </div>
-            <input id="input-submit" type="submit" value="Enviar" name="submit"/>
+            <input
+              id="input-submit"
+              type="submit"
+              value="Enviar"
+              name="submit"
+              disabled
+            />
+            <div id="result"></div>
           </form>
         </div>
         <div id="footer-container">
