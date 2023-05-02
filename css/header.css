@@ -47,6 +47,7 @@ nav::after {
 }
 
 .nav-container ul li {
+  vertical-align: top;
   display: inline-block;
   margin-left: 70px;
   font-family: "Poppins", sans-serif;
@@ -63,6 +64,10 @@ nav::after {
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+.change-lang img {
+ height: 28px;
 }
 
 /* MAIN */

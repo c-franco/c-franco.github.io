@@ -36,10 +36,12 @@
             alt="Logo"
           />
           <ul>
-            <li><a onclick="scrollFunction('about-me')">Sobre mí</a></li>
-            <li><a onclick="scrollFunction('works')">Trabajos</a></li>
-            <li><a onclick="scrollFunction('contact')">Contacto</a></li>
-            <li><a href="">Idioma</a></li>
+            <li class="nav-about-me"><a onclick="scrollFunction('about-me')">Sobre mí</a></li>
+            <li class="nav-works"><a onclick="scrollFunction('works')">Trabajos</a></li>
+            <li class="nav-contact"><a onclick="scrollFunction('contact')">Contacto</a></li>
+            <li class="change-lang">
+              <img id="change-lang-flag" src="https://flagsapi.com/ES/flat/32.png" onclick="ChangeLanguage()"/>
+            </li>
           </ul>
         </div>
       </nav>
@@ -58,18 +60,18 @@
       <div class="about-me-container container">
         <h2 class="about-me-title">Sobre mí</h2>
         <div class="about-me-text">
-          <p>
+          <p id="p1">
             ¡Hola! Mi nombre es Christian Franco, tengo 21 años y soy
             <span>desarrollador back-end</span>.
           </p>
-          <p>
+          <p id="p2">
             Mis habilidades incluyen el manejo de lenguajes de programación como
             <span>C#</span> y <span>Java</span>, al igual que competencias en
             <span>base de datos</span> y conocimientos en desarrollo web.
             Actualmente cuento con más de <span>un año de experiencia</span> en
             desarrollo de software en .NET.
           </p>
-          <p>
+          <p id="p3">
             Fuera del trabajo, me gusta automatizar tareas mediante la
             programación, desarrollar mis propias aplicaciones móviles e incluso
             videojuegos. Ahora mismo me encuentro en
@@ -183,7 +185,7 @@
         <div class="contact-form">
           <form action="send-email.php" method="POST" id="form">
             <div class="form-half form-left">
-              <p>Nombre</p>
+              <p class="form-name-label">Nombre</p>
               <input
                 id="input-name"
                 type="text"
@@ -201,7 +203,7 @@
               />
             </div>
             <div class="form-half form-right">
-              <p>Mensaje</p>
+              <p class="form-message-label">Mensaje</p>
               <textarea
                 id="input-message"
                 type="text"
@@ -227,7 +229,7 @@
           <div class="footer-logos">
             <ul>
               <li>
-                <a href="mailto:christianfrancosoto@gmail.com">Correo</a>
+                <a class="mail-logo" href="mailto:christianfrancosoto@gmail.com">Correo</a>
               </li>
               <li>
                 <a
