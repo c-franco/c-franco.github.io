@@ -29,7 +29,12 @@
     <header>
       <nav id="nav">
         <div class="nav-container">
-          <img id="logo" src="images/CFS_logo.svg" alt="Logo" />
+          <img
+            onclick="scrollToTop()"
+            id="logo"
+            src="images/CFS_logo.svg"
+            alt="Logo"
+          />
           <ul>
             <li><a onclick="scrollFunction('about-me')">Sobre mí</a></li>
             <li><a onclick="scrollFunction('works')">Trabajos</a></li>
@@ -46,7 +51,6 @@
           <p id="name">Christian Franco</p>
           <p id="job">Desarrollador Back-End</p>
         </div>
-        ºº
       </div>
     </header>
 
@@ -55,19 +59,21 @@
         <h2 class="about-me-title">Sobre mí</h2>
         <div class="about-me-text">
           <p>
-            Soy Christian Franco, un <span>desarrollador back-end</span> de 21
-            años.
+            ¡Hola! Mi nombre es Christian Franco, tengo 21 años y soy
+            <span>desarrollador back-end</span>.
           </p>
           <p>
-            Durante mi formación, tuve la oportunidad de aprender a desarrollar
-            en Java y crear páginas web con HTML y CSS. Actualmente cuento con
-            más de 1 año de experiencia trabajando con .NET.
+            Mis habilidades incluyen el manejo de lenguajes de programación como
+            <span>C#</span> y <span>Java</span>, al igual que competencias en
+            <span>base de datos</span> y conocimientos en desarrollo web.
+            Actualmente cuento con más de <span>un año de experiencia</span> en
+            desarrollo de software en .NET.
           </p>
           <p>
-            Cuando no estoy trabajando, me gusta
-            <span>automatizar tareas</span> mediante la programación y
-            desarrollar mis propias aplicaciones móviles e incluso videojuegos.
-            Actualmente me encuentro <span>búsqueda de nuevos proyectos</span>.
+            Fuera del trabajo, me gusta automatizar tareas mediante la
+            programación, desarrollar mis propias aplicaciones móviles e incluso
+            videojuegos. Ahora mismo me encuentro en
+            <span>búsqueda de nuevos proyectos</span>.
           </p>
         </div>
         <div class="about-me-skills">
@@ -168,7 +174,51 @@
     </section>
 
     <section id="contact">
-      <div class="container"></div>
+      <h1>Contacto</h1>
+      <div class="contact-container container">
+        <p class="contact-message">
+          ¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto
+          conmigo!
+        </p>
+        <div class="contact-form">
+          <form method="post" action="php/form.php">
+            <div class="form-half form-left">
+              <p>Nombre</p>
+              <input id="input-name" type="text" name="name"/>
+              <p class="form-email-label">Email</p>
+              <input id="input-email" type="email" name="email"/>
+            </div>
+            <div class="form-half form-right">
+              <p>Mensaje</p>
+              <textarea id="input-message" type="text" name="message"></textarea>
+            </div>
+            <input id="input-submit" type="submit" value="Enviar" name="submit"/>
+          </form>
+        </div>
+        <div id="footer-container">
+          <div class="footer-go-to-top" onclick="scrollToTop()">
+            <img src="/images/flecha.png" alt="Fecha" />
+          </div>
+          <div class="footer-logos">
+            <ul>
+              <li>
+                <a href="mailto:christianfrancosoto@gmail.com">Correo</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/christian-franco-soto/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/cfs20" target="_blank">Github</a>
+              </li>
+            </ul>
+          </div>
+          <p class="footer-text">Copyright © 2023 Christian Franco</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>

@@ -5,6 +5,13 @@ function scrollFunction(nav) {
   window.scrollTo({ top: y, behavior: "smooth" });
 }
 
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+}
+
 const navScroll = document.querySelector("#nav");
 
 window.addEventListener("scroll", () => {

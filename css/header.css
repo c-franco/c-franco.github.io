@@ -35,6 +35,7 @@ nav::after {
   width: 150px;
   float: left;
   padding: 15px 0;
+  cursor: pointer;
 }
 
 .nav-container ul {
