@@ -35,6 +35,10 @@
   overflow: hidden;
 }
 
+.contact-inputs {
+  height: 100%;
+}
+
 form {
   max-width: 800px;
   text-align: center;

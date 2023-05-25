@@ -25,3 +25,19 @@
   background-color: var(--layout-color);
   cursor: pointer;
 }
+
+.works-container div {
+  background-size: 100% 100%;
+}
+
+#work-1 {
+  background-image: url("/images/works/logo.png");
+}
+
+#work-2 {
+  background-image: url("/images/works/hah.png");
+}
+
+#work-3 {
+  background-image: url("/images/works/chair.png");
+}

@@ -14,6 +14,10 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"
+    ></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script defer src="js/script.js"></script>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
@@ -26,7 +30,7 @@
     <link rel="icon" type="image/png" href="/images/CFS_logo.svg" />
   </head>
   <body>
-    <header>
+    <!--<header>
       <nav id="nav">
         <div class="nav-container">
           <img
@@ -36,11 +40,21 @@
             alt="Logo"
           />
           <ul>
-            <li class="nav-about-me"><a onclick="scrollFunction('about-me')">Sobre mí</a></li>
-            <li class="nav-works"><a onclick="scrollFunction('works')">Trabajos</a></li>
-            <li class="nav-contact"><a onclick="scrollFunction('contact')">Contacto</a></li>
+            <li class="nav-about-me">
+              <a onclick="scrollFunction('about-me')">Sobre mí</a>
+            </li>
+            <li class="nav-works">
+              <a onclick="scrollFunction('works')">Trabajos</a>
+            </li>
+            <li class="nav-contact">
+              <a onclick="scrollFunction('contact')">Contacto</a>
+            </li>
             <li class="change-lang">
-              <img id="change-lang-flag" src="https://flagsapi.com/ES/flat/32.png" onclick="ChangeLanguage()"/>
+              <img
+                id="change-lang-flag"
+                src="https://flagsapi.com/ES/flat/32.png"
+                onclick="ChangeLanguage()"
+              />
             </li>
           </ul>
         </div>
@@ -161,17 +175,41 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section>-->
 
     <section id="works">
       <h1>Proyectos personales</h1>
       <div class="works-container container">
-        <div class="work-1 work-container"></div>
-        <div class="work-2 work-container"></div>
-        <div class="work-3 work-container"></div>
-        <div class="work-4 work-container"></div>
-        <div class="work-5 work-container"></div>
-        <div class="work-6 work-container"></div>
+        <div
+          id="work-1"
+          class="work-container"
+          onclick="fillModal('#work-1')"
+        ></div>
+        <div
+          id="work-2"
+          class="work-container"
+          onclick="fillModal('#work-2')"
+        ></div>
+        <div
+          id="work-3"
+          class="work-container"
+          onclick="fillModal('#work-3')"
+        ></div>
+        <div
+          id="work-4"
+          class="work-container"
+          onclick="fillModal('#work-4')"
+        ></div>
+        <div
+          id="work-5"
+          class="work-container"
+          onclick="fillModal('#work-5')"
+        ></div>
+        <div
+          id="work-6"
+          class="work-container"
+          onclick="fillModal('#work-6')"
+        ></div>
       </div>
     </section>
 
@@ -184,33 +222,35 @@
         </p>
         <div class="contact-form">
           <form action="send-email.php" method="POST" id="form">
-            <div class="form-half form-left">
-              <p class="form-name-label">Nombre</p>
-              <input
-                id="input-name"
-                type="text"
-                name="name"
-                oninput="IsFormValid()"
-                required
-              />
-              <p class="form-email-label">Email</p>
-              <input
-                id="input-email"
-                type="email"
-                name="email"
-                oninput="IsFormValid()"
-                required
-              />
-            </div>
-            <div class="form-half form-right">
-              <p class="form-message-label">Mensaje</p>
-              <textarea
-                id="input-message"
-                type="text"
-                name="message"
-                oninput="IsFormValid()"
-                required
-              ></textarea>
+            <div class="contact-inputs">
+              <div class="form-half form-left">
+                <p class="form-name-label">Nombre</p>
+                <input
+                  id="input-name"
+                  type="text"
+                  name="name"
+                  oninput="IsFormValid()"
+                  required
+                />
+                <p class="form-email-label">Email</p>
+                <input
+                  id="input-email"
+                  type="email"
+                  name="email"
+                  oninput="IsFormValid()"
+                  required
+                />
+              </div>
+              <div class="form-half form-right">
+                <p class="form-message-label">Mensaje</p>
+                <textarea
+                  id="input-message"
+                  type="text"
+                  name="message"
+                  oninput="IsFormValid()"
+                  required
+                ></textarea>
+              </div>
             </div>
             <input
               id="input-submit"
@@ -229,7 +269,9 @@
           <div class="footer-logos">
             <ul>
               <li>
-                <a class="mail-logo" href="mailto:christianfrancosoto@gmail.com">Correo</a>
+                <a class="mail-logo" href="mailto:christianfrancosoto@gmail.com"
+                  >Correo</a
+                >
               </li>
               <li>
                 <a
@@ -247,5 +289,52 @@
         </div>
       </div>
     </section>
+
+    <div id="modal-panel" class="modal">
+      <div class="modal-content container">
+        <div class="modal-left">
+          <div class="modal-container">
+            <iframe
+              id="modal-video"
+              width="560"
+              height="310"
+              src="https://www.youtube.com/embed/rwr7qPJVJlg"
+              frameborder="0"
+              allowfullscreen
+            ></iframe
+            ><img
+              id="modal-img"
+              src="/images/works/login.png"
+              alt="LiftSplit login"
+            />
+            <model-viewer
+              id="modal-obj"
+              alt="A 3D model of a chair"
+              src="/images/works/chair.glb"
+              ar
+              camera-orbit="0deg 150deg"
+              shadow-intensity="0"
+              camera-controls
+            ></model-viewer>
+          </div>
+        </div>
+        <div class="modal-right">
+          <span class="close">&times;</span>
+          <div class="modal-container">
+            <span class="modal-title"></span>
+            <span class="modal-text"
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus dignissim nulla placerat odio fringilla, id dignissim
+              nunc cursus. Nullam tincidunt sapien in imperdiet venenatis. Cras
+              pulvinar aliquam lectus nec hendrerit. Etiam id purus fermentum
+              urna commodo vestibulum ac vitae neque. Sed imperdiet venenatis
+              mollis. Integer vel leo diam. Aliquam neque arcu, semper non
+              volutpat at, ultricies a augue. Fusce massa eros, eleifend vitae
+              nisl eget, convallis ultricies diam. Aliquam ut molestie sem.
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

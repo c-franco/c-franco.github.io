@@ -145,3 +145,57 @@ function ChangeLanguage() {
     $(".mail-logo").text("Correo");
   }
 }
+
+var modal = document.getElementById("modal-panel");
+var span = document.getElementsByClassName("close")[0];
+
+$("#work-1, #work-2, #work-3").click(function () {
+  modal.style.display = "block";
+  document.body.style.overflow = "hidden";
+  document.body.style.height = "100%";
+});
+
+span.onclick = function () {
+  modal.style.display = "none";
+  document.body.style.overflow = "auto";
+  document.body.style.height = "auto";
+};
+
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    document.body.style.overflow = "auto";
+    document.body.style.height = "auto";
+  }
+};
+
+function fillModal(id) {
+  switch (id) {
+    case "#work-1":
+      $(".modal-title").text("LiftSplit");
+      $("#modal-img").css("display", "inline");
+      $("#modal-video").css("display", "none");
+      $("#modal-obj").css("display", "none");
+      break;
+    case "#work-2":
+      $(".modal-title").text("Hungry and angry");
+      $("#modal-img").css("display", "none");
+      $("#modal-video").css("display", "inline");
+      $("#modal-obj").css("display", "none");
+      break;
+    case "#work-3":
+      $(".modal-title").text("Lorem ipsum");
+      $("#modal-img").css("display", "none");
+      $("#modal-video").css("display", "none");
+      $("#modal-obj").css("display", "inline-block");
+      break;
+    case "#work-4":
+      break;
+    case "#work-5":
+      break;
+    case "#work-6":
+      break;
+    default:
+      break;
+  }
+}
