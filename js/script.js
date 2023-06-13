@@ -170,24 +170,107 @@ window.onclick = function (event) {
 };
 
 function fillModal(id) {
+  const flag = document.getElementById("change-lang-flag");
+
+  var esp = false;
+  if (flag.src.includes("ES")) {
+    esp = true;
+  }
+
   switch (id) {
     case "#work-1":
       $(".modal-title").text("LiftSplit");
+      if (esp) {
+        $(".modal-text-1").html(
+          "LiftSplit es una <span>aplicación móvil</span> para Android " +
+            "que permite a los usuarios realizar un seguimiento " +
+            "de las rutinas de entrenamiento. Cada usuario puede " +
+            "<span>crear una cuenta</span> y registrar ejercicios dentro de cada " +
+            "rutina. Además, se pueden contabilizar las <span>series, " +
+            "repeticiones y pesos</span> en los ejercicios. "
+        );
+        $(".modal-text-2").html(
+          "LiftSplit también incluye <span>otras funcionalidades</span> como temporizador, gráficas " +
+            "con los datos de los ejercicios, control de peso, etc. " +
+            "Esta aplicación fue desarrollada por mí en un plazo de 5 semanas."
+        );
+        $(".modal-tech").text("Hecho con: Android Studio, SQLite, Java, XML.");
+      } else {
+        $(".modal-text-1").html(
+          "LiftSplit is a <span>mobile app</span> for Android that allows users to track " +
+            "workout routines. Each user can <span>create an account</span> and log exercises " +
+            "within each routine. In addition, <span>sets, reps and weights</span> can be " +
+            "counted for each exercise. "
+        );
+        $(".modal-text-2").html(
+          "LiftSplit also includes <span>other functionalities</span> " +
+            "such as timer, exercise data graphs, weight control, etc. This application " +
+            "was developed by me in a period of 5 weeks."
+        );
+        $(".modal-tech").html("Made with: Android Studio, SQLite, Java, XML.");
+      }
       $("#modal-img").css("display", "inline");
       $("#modal-video").css("display", "none");
       $("#modal-obj").css("display", "none");
+      $(".modal-dots").css("display", "block");
       break;
     case "#work-2":
       $(".modal-title").text("Hungry and angry");
+      if (esp) {
+        $(".modal-text-1").html(
+          "Hungry and Angry es un <span>videojuego de plataformas en 3D</span>. El objetivo principal " +
+            "es <span>eliminar a las ratas</span> antes de que te golpeen e ir <span>recogiendo queso</span> para " +
+            "que el personaje no empiece a tener hambre y se enfade. "
+        );
+        $(".modal-text-2").html(
+          "Se puede recargar la munición con los elementos que sueltan las ratas. " +
+            "También hay <span>potenciadores</span> y <span>ratas más fuertes</span> de forma aleatoria. " +
+            "Este juego fue desarrollado por mí en un plazo de 3 semanas."
+        );
+        $(".modal-tech").html("Hecho con: Unity, C#, Blender.");
+      } else {
+        $(".modal-text-1").html(
+          "Hungry and Angry is a <span>3D platform video game</span>. The main goal is to <span>kill the rats</span> " +
+            "before they hit you and <span>collect cheese</span> so that the character doesn't get hungry and angry. "
+        );
+        $(".modal-text-2").html(
+          "The ammo can be refilled with items dropped by the rats. " +
+            "There are also <span>power-ups</span> and randomly <span>stronger rats</span>. This game was developed by me within 3 weeks."
+        );
+        $(".modal-tech").html("Made with: Unity, C#, Blender.");
+      }
       $("#modal-img").css("display", "none");
       $("#modal-video").css("display", "inline");
       $("#modal-obj").css("display", "none");
+      $(".modal-dots").css("display", "none");
       break;
     case "#work-3":
-      $(".modal-title").text("Lorem ipsum");
+      $(".modal-title").text("Modelo 3D taburete");
+      if (esp) {
+        $(".modal-text-1").html(
+          "Este pequeño proyecto es un <span>ensamblaje 3D</span> de un taburete compuesto por 4 piezas. " +
+            "Para cada pieza se crea un <span>plano 2D paramétrico</span> con todas las medidas y después se " +
+            "modela la pieza en base al plano. Por último se <span>ensamblan todas las piezas</span> formando un único objeto. "
+        );
+        $(".modal-text-2").html(
+          "Este proyecto fue desarrollado por mí en menos de una semana."
+        );
+        $(".modal-tech").html("Hecho con: Autodesk Fusion 360.");
+      } else {
+        $(".modal-text-1").html(
+          "This small project is a <span>3D assembly</span> of a stool made up of 4 pieces. " +
+            "For each part a<span> parametric 2D drawing</span> is created with all the measurements " +
+            "and then the part is modelled based on the drawing. Finally, all the <span>pieces are assembled</span> to form a single object."
+        );
+        $(".modal-text-2").html(
+          "This project was developed by me in less than a week."
+        );
+        $(".modal-tech").html("Made with: Autodesk Fusion 360.");
+      }
       $("#modal-img").css("display", "none");
       $("#modal-video").css("display", "none");
       $("#modal-obj").css("display", "inline-block");
+      $(".modal-dots").css("display", "none");
       break;
     case "#work-4":
       break;
@@ -197,5 +280,35 @@ function fillModal(id) {
       break;
     default:
       break;
+  }
+}
+
+function changeLifSplitImage(id) {
+  const img = document.getElementById("modal-img");
+
+  if (id == "#modal-dot-1") {
+    $(id).css("background-color", "#d4d571");
+    $("#modal-dot-2").css("background-color", "white");
+    $("#modal-dot-3").css("background-color", "white");
+    $("#modal-dot-4").css("background-color", "white");
+    img.src = "/images/works/login.png";
+  } else if (id == "#modal-dot-2") {
+    $(id).css("background-color", "#d4d571");
+    $("#modal-dot-1").css("background-color", "white");
+    $("#modal-dot-3").css("background-color", "white");
+    $("#modal-dot-4").css("background-color", "white");
+    img.src = "/images/works/home.png";
+  } else if (id == "#modal-dot-3") {
+    $(id).css("background-color", "#d4d571");
+    $("#modal-dot-1").css("background-color", "white");
+    $("#modal-dot-2").css("background-color", "white");
+    $("#modal-dot-4").css("background-color", "white");
+    img.src = "/images/works/workout.png";
+  } else if (id == "#modal-dot-4") {
+    $(id).css("background-color", "#d4d571");
+    $("#modal-dot-1").css("background-color", "white");
+    $("#modal-dot-2").css("background-color", "white");
+    $("#modal-dot-3").css("background-color", "white");
+    img.src = "/images/works/profile.png";
   }
 }
