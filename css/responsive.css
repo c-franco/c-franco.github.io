@@ -218,7 +218,7 @@
   }
 }
 
-@media only screen and (device-width: 840px) {
+@media only screen and (max-width: 840px) {
   nav {
     background-color: var(--layout-color);
   }
@@ -249,7 +249,7 @@
   }
 }
 
-@media only screen and (device-width: 740px) {
+@media only screen and (max-width: 740px) {
   .about-me-text {
     width: 100%;
     margin-top: 120px;
@@ -308,7 +308,7 @@
   }
 }
 
-@media only screen and (device-width: 480px) {
+@media only screen and (max-width: 480px) {
   .form-half {
     width: 100%;
     float: none;
@@ -336,7 +336,7 @@
   }
 }
 
-@media only screen and (device-width: 414px) {
+@media only screen and (max-width: 414px) {
   #title #name {
     font-size: 3rem;
   }
