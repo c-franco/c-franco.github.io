@@ -123,14 +123,6 @@ form input,
   margin-right: 2%;
 }
 
-@media (max-width: 480px) {
-  .form-half {
-    width: 100%;
-    float: none;
-    margin-bottom: 0;
-  }
-}
-
 #footer-container {
   background-color: var(--layout-color);
   position: absolute;

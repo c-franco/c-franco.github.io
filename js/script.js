@@ -1,8 +1,20 @@
 function scrollFunction(nav) {
-  const yOffset = -$("nav").height() + 1;
-  const element = document.getElementById(nav);
-  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  window.scrollTo({ top: y, behavior: "smooth" });
+  var width = $(window).width();
+
+  if (width > 840) {
+    const yOffset = -$("nav").height() + 1;
+    const element = document.getElementById(nav);
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+  } else {
+    const yOffset = -$("nav-container").height();
+    const element = document.getElementById(nav);
+    const y =
+      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: "smooth" });
+    document.getElementById("pivot").checked = false;
+  }
 }
 
 function scrollToTop() {
@@ -18,6 +30,15 @@ window.addEventListener("scroll", () => {
     navScroll.classList.add("nav-scrolled");
   } else if (window.scrollY <= 200) {
     navScroll.classList.remove("nav-scrolled");
+  }
+});
+
+const navScroll2 = document.querySelector("#nav-ul");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    navScroll2.classList.add("nav-scrolled");
+  } else if (window.scrollY <= 200) {
+    navScroll2.classList.remove("nav-scrolled");
   }
 });
 
@@ -81,8 +102,11 @@ form.addEventListener("submit", function handleClick(event) {
 
 function ChangeLanguage() {
   const flag = document.getElementById("change-lang-flag");
+  const flag2 = document.getElementById("change-lang-flag2");
+
   if (flag.src.includes("ES")) {
     flag.src = "https://flagsapi.com/GB/flat/32.png";
+    flag2.src = "https://flagsapi.com/GB/flat/32.png";
 
     $(".nav-about-me a").text("About me");
     $(".nav-works a").text("Works");
@@ -90,7 +114,7 @@ function ChangeLanguage() {
     $("#job").text("Back-End Developer");
     $(".about-me-title").text("About me");
     $("#p1").html(
-      "Hi! My name is Christian Franco, I'm 21 years old and I'm a <span>back-end developer</span>."
+      "Hi! My name is Christian Franco, I'm 22 years old and I'm a <span>back-end developer</span>."
     );
     $("#p2").html(
       "My skills include handling programming languages such as <span>C#</span> and <span>Java</span>, " +
@@ -112,6 +136,7 @@ function ChangeLanguage() {
     $(".mail-logo").text("Mail");
   } else {
     flag.src = "https://flagsapi.com/ES/flat/32.png";
+    flag2.src = "https://flagsapi.com/ES/flat/32.png";
 
     $(".nav-about-me a").text("Sobre mí");
     $(".nav-works a").text("Trabajos");
@@ -119,7 +144,7 @@ function ChangeLanguage() {
     $("#job").text("Desarrollador Back-End");
     $(".about-me-title").text("Sobre mí");
     $("#p1").html(
-      "¡Hola! Mi nombre es Christian Franco, tengo 21 años y soy <span>desarrollador back-end</span>."
+      "¡Hola! Mi nombre es Christian Franco, tengo 22 años y soy <span>desarrollador back-end</span>."
     );
     $("#p2").html(
       "Mis habilidades incluyen el manejo de lenguajes de programación como " +

@@ -26,311 +26,360 @@
     <link rel="stylesheet" type="text/css" href="css/works.css" />
     <link rel="stylesheet" type="text/css" href="css/contact.css" />
     <link rel="stylesheet" type="text/css" href="css/stars.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <title>Christian Franco</title>
     <link rel="icon" type="image/png" href="/images/CFS_logo.svg" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
   </head>
   <body>
-    <header>
-      <nav id="nav">
-        <div class="nav-container">
-          <img
-            onclick="scrollToTop()"
-            id="logo"
-            src="images/CFS_logo.svg"
-            alt="Logo"
-          />
-          <ul>
-            <li class="nav-about-me">
-              <a onclick="scrollFunction('about-me')">Sobre mí</a>
-            </li>
-            <li class="nav-works">
-              <a onclick="scrollFunction('works')">Trabajos</a>
-            </li>
-            <li class="nav-contact">
-              <a onclick="scrollFunction('contact')">Contacto</a>
-            </li>
-            <li class="change-lang">
-              <img
-                id="change-lang-flag"
-                src="https://flagsapi.com/ES/flat/32.png"
-                onclick="ChangeLanguage()"
-              />
-            </li>
-          </ul>
-        </div>
-      </nav>
-      <div id="home" class="main-container">
-        <div id="stars1"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="title">
-          <p id="name">Christian Franco</p>
-          <p id="job">Desarrollador Back-End</p>
-        </div>
-      </div>
-    </header>
-
-    <section id="about-me">
-      <div class="about-me-container container">
-        <h2 class="about-me-title">Sobre mí</h2>
-        <div class="about-me-text">
-          <p id="p1">
-            ¡Hola! Mi nombre es Christian Franco, tengo 21 años y soy
-            <span>desarrollador back-end</span>.
-          </p>
-          <p id="p2">
-            Mis habilidades incluyen el manejo de lenguajes de programación como
-            <span>C#</span> y <span>Java</span>, al igual que competencias en
-            <span>base de datos</span> y conocimientos en desarrollo web.
-            Actualmente cuento con más de <span>un año de experiencia</span> en
-            desarrollo de software en .NET.
-          </p>
-          <p id="p3">
-            Fuera del trabajo, me gusta automatizar tareas mediante la
-            programación, desarrollar mis propias aplicaciones móviles e incluso
-            videojuegos. Ahora mismo me encuentro en
-            <span>búsqueda de nuevos proyectos</span>.
-          </p>
-        </div>
-        <div class="about-me-skills">
-          <ul class="about-me-logos">
-            <li class="upper net-li">
-              <img
-                class="net-logo-white"
-                src="/images/skills/net.png"
-                alt="Logo .NET"
-              />
-              <img
-                class="net-logo"
-                src="/images/skills/net2.png"
-                alt="Logo .NET"
-              />
-              <p>C# .NET</p>
-            </li>
-            <li class="upper java-li">
-              <img
-                class="java-logo-white"
-                src="/images/skills/java.png"
-                alt="Logo Java"
-              />
-              <img
-                class="java-logo"
-                src="/images/skills/java2.png"
-                alt="Logo Java"
-              />
-              <p>Java</p>
-            </li>
-            <li class="upper sql-li">
-              <img
-                class="sql-logo-white"
-                src="/images/skills/sql.png"
-                alt="Logo SQL"
-              />
-              <img
-                class="sql-logo"
-                src="/images/skills/sql2.png"
-                alt="Logo SQL"
-              />
-              <p>SQL Server</p>
-            </li>
-            <li class="lower html-li">
-              <img
-                class="html-logo-white"
-                src="/images/skills/html5.png"
-                alt="Logo HTML5"
-              />
-              <img
-                class="html-logo"
-                src="/images/skills/html52.png"
-                alt="Logo HTML5"
-              />
-              <p>HTML 5</p>
-            </li>
-            <li class="lower css-li">
-              <img
-                class="css-logo-white"
-                src="/images/skills/css3.png"
-                alt="Logo CSS3"
-              />
-              <img
-                class="css-logo"
-                src="/images/skills/css32.png"
-                alt="Logo CSS3"
-              />
-              <p>CSS 3</p>
-            </li>
-            <li class="lower git-li">
-              <img
-                class="git-logo-white"
-                src="/images/skills/git.png"
-                alt="Logo Git"
-              />
-              <img
-                class="git-logo"
-                src="/images/skills/git2.png"
-                alt="Logo Git"
-              />
-              <p>Git</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section id="works">
-      <h1>Proyectos personales</h1>
-      <div class="works-container container">
-        <div
-          id="work-1"
-          class="work-container"
-          onclick="fillModal('#work-1')"
-        ></div>
-        <div
-          id="work-2"
-          class="work-container"
-          onclick="fillModal('#work-2')"
-        ></div>
-        <div
-          id="work-3"
-          class="work-container"
-          onclick="fillModal('#work-3')"
-        ></div>
-        <div
-          id="work-4"
-          class="work-container"
-          onclick="fillModal('#work-4')"
-        ></div>
-        <div
-          id="work-5"
-          class="work-container"
-          onclick="fillModal('#work-5')"
-        ></div>
-        <div
-          id="work-6"
-          class="work-container"
-          onclick="fillModal('#work-6')"
-        ></div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <h1>Contacto</h1>
-      <div class="contact-container container">
-        <p class="contact-message">
-          ¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto
-          conmigo!
-        </p>
-        <div class="contact-form">
-          <form action="send-email.php" method="POST" id="form">
-            <div class="contact-inputs">
-              <div class="form-half form-left">
-                <p class="form-name-label">Nombre</p>
-                <input
-                  id="input-name"
-                  type="text"
-                  name="name"
-                  oninput="IsFormValid()"
-                  required
-                />
-                <p class="form-email-label">Email</p>
-                <input
-                  id="input-email"
-                  type="email"
-                  name="email"
-                  oninput="IsFormValid()"
-                  required
-                />
-              </div>
-              <div class="form-half form-right">
-                <p class="form-message-label">Mensaje</p>
-                <textarea
-                  id="input-message"
-                  type="text"
-                  name="message"
-                  oninput="IsFormValid()"
-                  required
-                ></textarea>
-              </div>
-            </div>
-            <input
-              id="input-submit"
-              type="submit"
-              value="Enviar"
-              name="submit"
-              disabled
+    <div class="body-container">
+      <header>
+        <nav id="nav">
+          <div class="nav-container">
+            <img
+              onclick="scrollToTop()"
+              id="logo"
+              src="images/CFS_logo.svg"
+              alt="Logo"
             />
-            <div id="result"></div>
-          </form>
-        </div>
-        <div id="footer-container">
-          <div class="footer-go-to-top" onclick="scrollToTop()">
-            <img src="/images/flecha.png" alt="Fecha" />
-          </div>
-          <div class="footer-logos">
             <ul>
-              <li>
-                <a class="mail-logo" href="mailto:christianfrancosoto@gmail.com"
-                  >Correo</a
-                >
+              <li class="nav-about-me">
+                <a onclick="scrollFunction('about-me')">Sobre mí</a>
               </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/christian-franco-soto/"
-                  target="_blank"
-                  >LinkedIn</a
-                >
+              <li class="nav-works">
+                <a onclick="scrollFunction('works')">Trabajos</a>
               </li>
-              <li>
-                <a href="https://github.com/cfs20" target="_blank">Github</a>
+              <li class="nav-contact">
+                <a onclick="scrollFunction('contact')">Contacto</a>
+              </li>
+              <li class="change-lang">
+                <img
+                  id="change-lang-flag"
+                  src="https://flagsapi.com/ES/flat/32.png"
+                  onclick="ChangeLanguage()"
+                />
               </li>
             </ul>
           </div>
-          <p class="footer-text">Copyright © 2023 Christian Franco</p>
-        </div>
-      </div>
-    </section>
-
-    <div id="modal-panel" class="modal">
-      <div class="modal-content container">
-        <div class="modal-left">
-          <div class="modal-container">
-            <iframe
-              id="modal-video"
-              width="560"
-              height="310"
-              src="https://www.youtube.com/embed/rwr7qPJVJlg"
-              frameborder="0"
-              allowfullscreen
-            ></iframe
-            ><img
-              id="modal-img"
-              src="/images/works/login.png"
-              alt="LiftSplit"
-            />
-            <model-viewer
-              id="modal-obj"
-              alt="A 3D model of a chair"
-              src="/images/works/chair.glb"
-              ar
-              camera-orbit="0deg 150deg"
-              shadow-intensity="0"
-              camera-controls
-            ></model-viewer>
-            <div class="modal-dots">
-              <span id="modal-dot-1" onclick="changeLifSplitImage('#modal-dot-1')"></span>
-              <span id="modal-dot-2" onclick="changeLifSplitImage('#modal-dot-2')"></span>
-              <span id="modal-dot-3" onclick="changeLifSplitImage('#modal-dot-3')"></span>
-              <span id="modal-dot-4" onclick="changeLifSplitImage('#modal-dot-4')"></span>
-            </div>
+          <div class="nav-menu">
+            <input type="checkbox" id="pivot" />
+            <label for="pivot" class="pivot-trigger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <ul id="nav-ul">
+              <li class="nav-about-me">
+                <a onclick="scrollFunction('about-me')">Sobre mí</a>
+              </li>
+              <li class="nav-works">
+                <a onclick="scrollFunction('works')">Trabajos</a>
+              </li>
+              <li class="nav-contact">
+                <a onclick="scrollFunction('contact')">Contacto</a>
+              </li>
+              <li class="change-lang">
+                <img
+                  id="change-lang-flag2"
+                  src="https://flagsapi.com/ES/flat/32.png"
+                  onclick="ChangeLanguage()"
+                />
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div id="home" class="main-container">
+          <div id="stars1"></div>
+          <div id="stars2"></div>
+          <div id="stars3"></div>
+          <div id="title">
+            <p id="name">Christian Franco</p>
+            <p id="job">Desarrollador Back-End</p>
           </div>
         </div>
-        <div class="modal-right">
-          <span class="close">&times;</span>
-          <div class="modal-container">
-            <h3 class="modal-title"></h3>
-            <p class="modal-text-1"></p>
-            <p class="modal-text-2"></p>
-            <p class="modal-tech"></p>
+      </header>
+
+      <section id="about-me">
+        <div class="about-me-container container">
+          <h2 class="about-me-title">Sobre mí</h2>
+          <div class="about-me-text">
+            <p id="p1">
+              ¡Hola! Mi nombre es Christian Franco, tengo 22 años y soy
+              <span>desarrollador back-end</span>.
+            </p>
+            <p id="p2">
+              Mis habilidades incluyen el manejo de lenguajes de programación
+              como
+              <span>C#</span> y <span>Java</span>, al igual que competencias en
+              <span>base de datos</span> y conocimientos en desarrollo web.
+              Actualmente cuento con más de
+              <span>un año de experiencia</span> en desarrollo de software en
+              .NET.
+            </p>
+            <p id="p3">
+              Fuera del trabajo, me gusta automatizar tareas mediante la
+              programación, desarrollar mis propias aplicaciones móviles e
+              incluso videojuegos. Ahora mismo me encuentro en
+              <span>búsqueda de nuevos proyectos</span>.
+            </p>
+          </div>
+          <div class="about-me-skills">
+            <ul class="about-me-logos">
+              <li class="upper net-li">
+                <img
+                  class="net-logo-white"
+                  src="/images/skills/net.png"
+                  alt="Logo .NET"
+                />
+                <img
+                  class="net-logo"
+                  src="/images/skills/net2.png"
+                  alt="Logo .NET"
+                />
+                <p>C# .NET</p>
+              </li>
+              <li class="upper java-li">
+                <img
+                  class="java-logo-white"
+                  src="/images/skills/java.png"
+                  alt="Logo Java"
+                />
+                <img
+                  class="java-logo"
+                  src="/images/skills/java2.png"
+                  alt="Logo Java"
+                />
+                <p>Java</p>
+              </li>
+              <li class="upper sql-li">
+                <img
+                  class="sql-logo-white"
+                  src="/images/skills/sql.png"
+                  alt="Logo SQL"
+                />
+                <img
+                  class="sql-logo"
+                  src="/images/skills/sql2.png"
+                  alt="Logo SQL"
+                />
+                <p>SQL Server</p>
+              </li>
+              <li class="lower html-li">
+                <img
+                  class="html-logo-white"
+                  src="/images/skills/html5.png"
+                  alt="Logo HTML5"
+                />
+                <img
+                  class="html-logo"
+                  src="/images/skills/html52.png"
+                  alt="Logo HTML5"
+                />
+                <p>HTML 5</p>
+              </li>
+              <li class="lower css-li">
+                <img
+                  class="css-logo-white"
+                  src="/images/skills/css3.png"
+                  alt="Logo CSS3"
+                />
+                <img
+                  class="css-logo"
+                  src="/images/skills/css32.png"
+                  alt="Logo CSS3"
+                />
+                <p>CSS 3</p>
+              </li>
+              <li class="lower git-li">
+                <img
+                  class="git-logo-white"
+                  src="/images/skills/git.png"
+                  alt="Logo Git"
+                />
+                <img
+                  class="git-logo"
+                  src="/images/skills/git2.png"
+                  alt="Logo Git"
+                />
+                <p>Git</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="works">
+        <h1>Proyectos personales</h1>
+        <div class="works-container container">
+          <div
+            id="work-1"
+            class="work-container"
+            onclick="fillModal('#work-1')"
+          ></div>
+          <div
+            id="work-2"
+            class="work-container"
+            onclick="fillModal('#work-2')"
+          ></div>
+          <div
+            id="work-3"
+            class="work-container"
+            onclick="fillModal('#work-3')"
+          ></div>
+          <div
+            id="work-4"
+            class="work-container"
+            onclick="fillModal('#work-4')"
+          ></div>
+          <div
+            id="work-5"
+            class="work-container"
+            onclick="fillModal('#work-5')"
+          ></div>
+          <div
+            id="work-6"
+            class="work-container"
+            onclick="fillModal('#work-6')"
+          ></div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h1>Contacto</h1>
+        <div class="contact-container container">
+          <p class="contact-message">
+            ¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en
+            contacto conmigo!
+          </p>
+          <div class="contact-form">
+            <form action="send-email.php" method="POST" id="form">
+              <div class="contact-inputs">
+                <div class="form-half form-left">
+                  <p class="form-name-label">Nombre</p>
+                  <input
+                    id="input-name"
+                    type="text"
+                    name="name"
+                    oninput="IsFormValid()"
+                    required
+                  />
+                  <p class="form-email-label">Email</p>
+                  <input
+                    id="input-email"
+                    type="email"
+                    name="email"
+                    oninput="IsFormValid()"
+                    required
+                  />
+                </div>
+                <div class="form-half form-right">
+                  <p class="form-message-label">Mensaje</p>
+                  <textarea
+                    id="input-message"
+                    type="text"
+                    name="message"
+                    oninput="IsFormValid()"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <input
+                id="input-submit"
+                type="submit"
+                value="Enviar"
+                name="submit"
+                disabled
+              />
+              <div id="result"></div>
+            </form>
+          </div>
+          <div id="footer-container">
+            <div class="footer-go-to-top" onclick="scrollToTop()">
+              <img src="/images/flecha.png" alt="Fecha" />
+            </div>
+            <div class="footer-logos">
+              <ul>
+                <li>
+                  <a
+                    class="mail-logo"
+                    href="mailto:christianfrancosoto@gmail.com"
+                    >Correo</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/in/christian-franco-soto/"
+                    target="_blank"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li>
+                  <a href="https://github.com/cfs20" target="_blank">Github</a>
+                </li>
+              </ul>
+            </div>
+            <p class="footer-text">Copyright © 2023 Christian Franco</p>
+          </div>
+        </div>
+      </section>
+
+      <div id="modal-panel" class="modal">
+        <div class="modal-content container">
+          <div class="modal-right">
+            <span class="close">&times;</span>
+            <div class="modal-container">
+              <h3 class="modal-title"></h3>
+              <p class="modal-text-1"></p>
+              <p class="modal-text-2"></p>
+              <p class="modal-tech"></p>
+            </div>
+          </div>
+          <div class="modal-left">
+            <div class="modal-container">
+              <iframe
+                id="modal-video"
+                width="560"
+                height="310"
+                src="https://www.youtube.com/embed/rwr7qPJVJlg"
+                frameborder="0"
+                allowfullscreen
+              ></iframe
+              ><img
+                id="modal-img"
+                src="/images/works/login.png"
+                alt="LiftSplit"
+              />
+              <model-viewer
+                id="modal-obj"
+                alt="A 3D model of a chair"
+                src="/images/works/chair.glb"
+                ar
+                camera-orbit="0deg 150deg"
+                shadow-intensity="0"
+                camera-controls
+              ></model-viewer>
+              <div class="modal-dots">
+                <span
+                  id="modal-dot-1"
+                  onclick="changeLifSplitImage('#modal-dot-1')"
+                ></span>
+                <span
+                  id="modal-dot-2"
+                  onclick="changeLifSplitImage('#modal-dot-2')"
+                ></span>
+                <span
+                  id="modal-dot-3"
+                  onclick="changeLifSplitImage('#modal-dot-3')"
+                ></span>
+                <span
+                  id="modal-dot-4"
+                  onclick="changeLifSplitImage('#modal-dot-4')"
+                ></span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

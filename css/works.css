@@ -8,15 +8,16 @@
   font-size: 2.1rem;
   font-weight: 550;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .works-container {
+  width: 55%;
   margin-top: 50px;
-  height: 65vh;
+  height: auto;
   overflow: hidden;
   display: grid;
-  gap: 40px;
+  gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
 }
 
@@ -24,6 +25,7 @@
   border-radius: 0.5rem;
   background-color: var(--layout-color);
   cursor: pointer;
+  aspect-ratio: 1;
 }
 
 @keyframes modalopen {

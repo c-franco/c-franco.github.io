@@ -1,0 +1,364 @@
+.body-container {
+  max-width: 1920px;
+}
+
+.nav-menu {
+  display: none;
+}
+
+.nav-menu ul {
+  display: none;
+}
+
+.nav-menu input:checked ~ ul {
+  display: block;
+}
+
+.nav-menu input {
+  display: none;
+}
+
+.nav-menu ul {
+  margin-top: 86px;
+  background: transparent;
+}
+
+.nav-menu ul li {
+  display: block;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  height: 50px;
+}
+
+.nav-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-menu ul li img {
+  cursor: pointer;
+}
+
+#pivot {
+  visibility: hidden;
+}
+
+.pivot-trigger {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  right: 20px;
+  top: 30px;
+  z-index: 20;
+  cursor: pointer;
+}
+
+.pivot-trigger span {
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 40px;
+  background: #fff;
+  border-radius: 10px;
+  left: 0;
+  top: 0;
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+  -webkit-transform-origin: left center;
+  transform-origin: left center;
+  opacity: 1;
+}
+
+.pivot-trigger span:nth-child(1) {
+  top: 0px;
+}
+
+.pivot-trigger span:nth-child(2) {
+  top: 10px;
+}
+
+.pivot-trigger span:nth-child(3) {
+  top: 20px;
+}
+
+#pivot:checked ~ .menu-container {
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+  opacity: 1;
+}
+
+#pivot:checked + .pivot-trigger span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: -8px;
+}
+
+#pivot:checked + .pivot-trigger span:nth-child(2) {
+  width: 0;
+  opacity: 0;
+}
+
+#pivot:checked + .pivot-trigger span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+@media only screen and (max-width: 1700px) {
+  .nav-container {
+    width: 80%;
+  }
+
+  .about-me-text {
+    width: 60%;
+  }
+
+  .works-container {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .container,
+  #footer-container {
+    width: 80%;
+  }
+
+  #works {
+    margin-bottom: 100px;
+  }
+
+  .works-container {
+    height: 81vh;
+  }
+}
+
+@media only screen and (max-width: 1320px) {
+  #works {
+    margin-bottom: 0px;
+  }
+
+  .works-container {
+    gap: 2rem;
+  }
+
+  .about-me-text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav-container {
+    width: 90%;
+  }
+
+  #title #name {
+    font-size: 5.5rem;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #title #job {
+    font-size: 2.5rem;
+  }
+
+  .container,
+  #footer-container {
+    width: 100%;
+  }
+
+  #works {
+    height: auto;
+  }
+
+  .works-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 65%;
+    height: auto;
+    gap: 3rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .about-me-text {
+    width: 100%;
+    display: inline-block;
+    font-size: 1.1rem;
+    text-align: justify;
+    padding: 0;
+    margin: 0;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  .about-me-skills {
+    width: 100%;
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .about-me-skills ul li {
+    margin-left: 0;
+  }
+
+  .about-me-container {
+    display: block;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  nav {
+    background-color: var(--layout-color);
+  }
+  
+  .nav-container ul {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+
+  #title #name {
+    font-size: 4.5rem;
+  }
+
+  #title #job {
+    font-size: 2rem;
+  }
+
+  .works-container {
+    width: 85%;
+  }
+
+  .works-container {
+    width: 75%;
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .about-me-text {
+    width: 100%;
+    margin-top: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .close {
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+  }
+
+  .modal-content {
+    height: auto;
+  }
+
+  .modal-container {
+    margin-top: 10px;
+    padding-left: 20px;
+  }
+
+  .modal-left {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  .modal-right {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    float: none;
+  }
+
+  #modal-img {
+    margin-top: 20px;
+    width: 200px;
+  }
+
+  .modal-dots {
+    margin-bottom: 30px;
+  }
+
+  #modal-video {
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #modal-obj {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .form-half {
+    width: 100%;
+    float: none;
+    margin-bottom: 0;
+  }
+
+  .contact-container {
+    height: 75%;
+  }
+
+  .form-message-label {
+    margin-top: 20px;
+  }
+
+  .contact-form {
+    height: auto;
+  }
+
+  #contact {
+    height: 110vh;
+  }
+
+  #input-submit {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  #title #name {
+    font-size: 3rem;
+  }
+
+  #title #job {
+    font-size: 1.5rem;
+  }
+
+  .nav-menu ul {
+    background: var(--layout-color);
+  }
+
+  .about-me-text {
+    font-size: 1rem;
+  }
+
+  #about-me {
+    margin-top: 200px;
+    margin-bottom: 150px;
+  }
+
+  #works h1 {
+    font-size: 1.9rem;
+  }
+}
