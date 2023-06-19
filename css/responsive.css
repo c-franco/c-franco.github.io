@@ -350,6 +350,8 @@
 
   #footer-container {
     position: unset;
+    height: auto;
+    margin-bottom: 20px;
   }
 
   .footer-go-to-top {
