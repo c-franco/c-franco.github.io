@@ -123,6 +123,17 @@
   .works-container {
     width: 60%;
   }
+
+  .modal-content {
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  #modal-video {
+    margin-top: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -138,6 +149,11 @@
   .works-container {
     height: 81vh;
   }
+
+  .modal-content {
+    height: auto;
+    margin-bottom: 40px;
+  }
 }
 
 @media only screen and (max-width: 1320px) {
@@ -151,6 +167,11 @@
 
   .about-me-text {
     font-size: 1rem;
+  }
+
+  .modal-content {
+    height: auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -183,6 +204,11 @@
     width: 65%;
     height: auto;
     gap: 3rem;
+  }
+
+  .modal-content {
+    height: 0 auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -273,11 +299,16 @@
 
   .modal-content {
     height: auto;
+    padding-bottom: 0;
   }
 
   .modal-container {
     margin-top: 10px;
     padding-left: 20px;
+  }
+
+  .modal-container p {
+    font-size: 1rem;
   }
 
   .modal-left {
@@ -298,7 +329,7 @@
 
   #modal-img {
     margin-top: 20px;
-    width: 200px;
+    width: 150px;
   }
 
   .modal-dots {
@@ -309,10 +340,13 @@
     margin: 0;
     margin-top: 30px;
     margin-bottom: 30px;
+    height: 250px;
   }
 
   #modal-obj {
     margin: 0;
+    height: 320px;
+    margin-bottom: 15px;
   }
 }
 
@@ -360,6 +394,18 @@
 
   #input-submit {
     width: 80px;
+  }
+
+  #modal-img {
+    width: 150px;
+  }
+
+  #modal-video {
+    height: 210px;
+  }
+
+  #modal-obj {
+    height: 280px;
   }
 }
 
