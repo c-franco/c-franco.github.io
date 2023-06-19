@@ -47,7 +47,6 @@
 
 #pivot {
   visibility: hidden;
-  pointer-events: none;
 }
 
 .pivot-trigger {
@@ -232,6 +231,14 @@
     display: block;
   }
 
+  #pivot {
+    cursor: none;
+  }
+
+  .pivot-trigger {
+    cursor: none;
+  }
+
   #title #name {
     font-size: 4.5rem;
   }
@@ -329,7 +336,7 @@
   }
 
   #contact {
-    height: 120vh;
+    height: auto;
   }
 
   #input-submit {
@@ -337,8 +344,20 @@
   }
 
   .contact-message {
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  #footer-container {
+    position: unset;
+  }
+
+  .footer-go-to-top {
+    position: unset;
+  }
+
+  #input-submit {
+    width: 80px;
   }
 }
 
