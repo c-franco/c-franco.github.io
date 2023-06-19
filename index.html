@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -43,18 +46,18 @@
             />
             <ul>
               <li class="nav-about-me">
-                <a onclick="scrollFunction('about-me')">Sobre mí</a>
+                <a onclick="scrollFunction('about-me')">About me</a>
               </li>
               <li class="nav-works">
-                <a onclick="scrollFunction('works')">Trabajos</a>
+                <a onclick="scrollFunction('works')">Works</a>
               </li>
               <li class="nav-contact">
-                <a onclick="scrollFunction('contact')">Contacto</a>
+                <a onclick="scrollFunction('contact')">Contact</a>
               </li>
               <li class="change-lang">
                 <img
                   id="change-lang-flag"
-                  src="https://flagsapi.com/ES/flat/32.png"
+                  src="https://flagsapi.com/GB/flat/32.png"
                   onclick="ChangeLanguage()"
                 />
               </li>
@@ -69,18 +72,18 @@
             </label>
             <ul id="nav-ul">
               <li class="nav-about-me">
-                <a onclick="scrollFunction('about-me')">Sobre mí</a>
+                <a onclick="scrollFunction('about-me')">About me</a>
               </li>
               <li class="nav-works">
-                <a onclick="scrollFunction('works')">Trabajos</a>
+                <a onclick="scrollFunction('works')">Works</a>
               </li>
               <li class="nav-contact">
-                <a onclick="scrollFunction('contact')">Contacto</a>
+                <a onclick="scrollFunction('contact')">Contact</a>
               </li>
               <li class="change-lang">
                 <img
                   id="change-lang-flag2"
-                  src="https://flagsapi.com/ES/flat/32.png"
+                  src="https://flagsapi.com/GB/flat/32.png"
                   onclick="ChangeLanguage()"
                 />
               </li>
@@ -93,33 +96,30 @@
           <div id="stars3"></div>
           <div id="title">
             <p id="name">Christian Franco</p>
-            <p id="job">Desarrollador Back-End</p>
+            <p id="job">Back-End Developer</p>
           </div>
         </div>
       </header>
 
       <section id="about-me">
         <div class="about-me-container container">
-          <h2 class="about-me-title">Sobre mí</h2>
+          <h2 class="about-me-title">About me</h2>
           <div class="about-me-text">
             <p id="p1">
-              ¡Hola! Mi nombre es Christian Franco, tengo 22 años y soy
-              <span>desarrollador back-end</span>.
+              Hi! My name is Christian Franco, I'm 22 years old and I'm a
+              <span>back-end developer</span>.
             </p>
             <p id="p2">
-              Mis habilidades incluyen el manejo de lenguajes de programación
-              como
-              <span>C#</span> y <span>Java</span>, al igual que competencias en
-              <span>base de datos</span> y conocimientos en desarrollo web.
-              Actualmente cuento con más de
-              <span>un año de experiencia</span> en desarrollo de software en
-              .NET.
+              My skills include handling programming languages such as
+              <span>C#</span> and <span>Java</span> as well as
+              <span>database skills</span> and knowledge in web development. I
+              currently have more than <span>a year of experience</span> in .NET
+              software development.
             </p>
             <p id="p3">
-              Fuera del trabajo, me gusta automatizar tareas mediante la
-              programación, desarrollar mis propias aplicaciones móviles e
-              incluso videojuegos. Ahora mismo me encuentro en
-              <span>búsqueda de nuevos proyectos</span>.
+              Outside of work, I like to automate tasks through programming,
+              develop my own mobile apps and even video games. Right now I am
+              <span>looking for new projects</span>.
             </p>
           </div>
           <div class="about-me-skills">
@@ -208,7 +208,7 @@
       </section>
 
       <section id="works">
-        <h1>Proyectos personales</h1>
+        <h1>Personal projects</h1>
         <div class="works-container container">
           <div
             id="work-1"
@@ -244,17 +244,16 @@
       </section>
 
       <section id="contact">
-        <h1>Contacto</h1>
+        <h1>Contact</h1>
         <div class="contact-container container">
           <p class="contact-message">
-            ¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en
-            contacto conmigo!
+            If you have any questions or comments, don't hesitate to contact me!
           </p>
           <div class="contact-form">
             <form action="send-email.php" method="POST" id="form">
               <div class="contact-inputs">
                 <div class="form-half form-left">
-                  <p class="form-name-label">Nombre</p>
+                  <p class="form-name-label">Name</p>
                   <input
                     id="input-name"
                     type="text"
@@ -262,7 +261,7 @@
                     oninput="IsFormValid()"
                     required
                   />
-                  <p class="form-email-label">Email</p>
+                  <p class="form-email-label">Mail</p>
                   <input
                     id="input-email"
                     type="email"
@@ -272,7 +271,7 @@
                   />
                 </div>
                 <div class="form-half form-right">
-                  <p class="form-message-label">Mensaje</p>
+                  <p class="form-message-label">Message</p>
                   <textarea
                     id="input-message"
                     type="text"
@@ -285,7 +284,7 @@
               <input
                 id="input-submit"
                 type="submit"
-                value="Enviar"
+                value="Send"
                 name="submit"
                 disabled
               />
@@ -302,7 +301,7 @@
                   <a
                     class="mail-logo"
                     href="mailto:christianfrancosoto@gmail.com"
-                    >Correo</a
+                    >Mail</a
                   >
                 </li>
                 <li>

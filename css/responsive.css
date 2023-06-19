@@ -47,6 +47,7 @@
 
 #pivot {
   visibility: hidden;
+  pointer-events: none;
 }
 
 .pivot-trigger {
@@ -328,11 +329,16 @@
   }
 
   #contact {
-    height: 110vh;
+    height: 120vh;
   }
 
   #input-submit {
     margin-top: 40px;
+  }
+
+  .contact-message {
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 
