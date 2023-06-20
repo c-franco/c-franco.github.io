@@ -125,6 +125,7 @@ function ChangeLanguage() {
     );
     $(".form-name-label").text("Name");
     $(".form-message-label").text("Message");
+    $(".form-email-label").text("Mail");
     $("#input-submit").prop("value", "Send");
     $(".mail-logo").text("Mail");
   } else {
@@ -159,6 +160,7 @@ function ChangeLanguage() {
     );
     $(".form-name-label").text("Nombre");
     $(".form-message-label").text("Mensaje");
+    $(".form-email-label").text("Email");
     $("#input-submit").prop("value", "Enviar");
     $(".mail-logo").text("Correo");
   }
