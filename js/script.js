@@ -1,20 +1,13 @@
 function scrollFunction(nav) {
   var width = $(window).width();
 
-  if (width > 840) {
-    const yOffset = -$("nav").height() + 1;
-    const element = document.getElementById(nav);
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
-  } else {
-    const yOffset = -$("nav-container").height();
-    const element = document.getElementById(nav);
-    const y =
-      element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: "smooth" });
+  if (width < 840) {
     document.getElementById("pivot").checked = false;
   }
+  const yOffset = -$("nav").height() + 1;
+  const element = document.getElementById(nav);
+  const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+  window.scrollTo({ top: y, behavior: "smooth" });
 }
 
 function scrollToTop() {
@@ -270,8 +263,8 @@ function fillModal(id) {
       $(".modal-dots").css("display", "none");
       break;
     case "#work-3":
-      $(".modal-title").text("Modelo 3D taburete");
       if (esp) {
+        $(".modal-title").text("Modelo 3D taburete");
         $(".modal-text-1").html(
           "Este pequeño proyecto es un <span>ensamblaje 3D</span> de un taburete compuesto por 4 piezas. " +
             "Para cada pieza se crea un <span>plano 2D paramétrico</span> con todas las medidas y después se " +
@@ -282,6 +275,7 @@ function fillModal(id) {
         );
         $(".modal-tech").html("Hecho con: Autodesk Fusion 360.");
       } else {
+        $(".modal-title").text("3D stool model");
         $(".modal-text-1").html(
           "This small project is a <span>3D assembly</span> of a stool made up of 4 pieces. " +
             "For each part a<span> parametric 2D drawing</span> is created with all the measurements " +
